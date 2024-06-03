@@ -1,0 +1,244 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Courbes\n"
+"POT-Creation-Date: 2024-06-03 22:57+0200\n"
+"PO-Revision-Date: 2024-06-03 22:44+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
+"X-Poedit-SearchPathExcluded-2: vendor\n"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:18
+msgid "It looks like nothing was found at this location."
+msgstr ""
+
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:40
+msgid "Blocks Fields"
+msgstr ""
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:46
+msgid "Hero"
+msgstr ""
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:58
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:62
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:96
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:99
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:111
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:114
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:151
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:155
+#: includes/Plugins/ACF/IncludeFields/HeaderFields.php:53
+#: includes/Plugins/ACF/IncludeFields/HeaderFields.php:56
+msgid "Title"
+msgstr ""
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:66
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:159
+msgid "Background Image"
+msgstr ""
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:75
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:210
+#: includes/Plugins/ACF/IncludeFields/HeaderFields.php:60
+#: includes/Plugins/ACF/IncludeFields/InstagramFields.php:71
+msgid "Link"
+msgstr ""
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:84
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:89
+#: views/index.html.twig:52
+msgid "Cares"
+msgstr ""
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:103
+msgid "Items"
+msgstr ""
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:107
+msgid "Add Item"
+msgstr ""
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:119
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:123
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:175
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:182
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:186
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:193
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:197
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:204
+msgid "Text"
+msgstr ""
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:130
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:133
+msgid "Label"
+msgstr ""
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:139
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:144
+#: views/index.html.twig:53
+msgid "Offers"
+msgstr ""
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:168
+msgid "Texts"
+msgstr ""
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:219
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:224
+msgid "Informations"
+msgstr ""
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:231
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:235
+#: views/index.html.twig:109
+msgid "Opening Hours"
+msgstr ""
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:239
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:242
+msgid "Address"
+msgstr ""
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:246
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:249
+msgid "Mail"
+msgstr ""
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:253
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:256
+msgid "Phone Number"
+msgstr ""
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:260
+#: includes/Setup/Context.php:58 views/index.html.twig:130
+msgid "Facebook"
+msgstr ""
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:267
+#: includes/Plugins/ACF/IncludeFields/InstagramFields.php:46
+#: includes/Setup/Context.php:66 views/index.html.twig:134
+msgid "Instagram"
+msgstr ""
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:279
+msgid "Front Page Fields"
+msgstr ""
+
+#: includes/Plugins/ACF/IncludeFields/HeaderFields.php:46
+msgid "Header"
+msgstr ""
+
+#: includes/Plugins/ACF/IncludeFields/HeaderFields.php:72
+msgid "Header Fields"
+msgstr ""
+
+#: includes/Plugins/ACF/IncludeFields/InstagramFields.php:53
+msgid "Images"
+msgstr ""
+
+#: includes/Plugins/ACF/IncludeFields/InstagramFields.php:57
+msgid "Add Image"
+msgstr ""
+
+#: includes/Plugins/ACF/IncludeFields/InstagramFields.php:61
+msgid "Image"
+msgstr ""
+
+#: includes/Plugins/ACF/IncludeFields/InstagramFields.php:85
+msgid "Instagram Fields"
+msgstr ""
+
+#: includes/Plugins/ACF/Init.php:30 includes/Plugins/ACF/Init.php:32
+msgid "Theme Settings"
+msgstr ""
+
+#: includes/Plugins/ContactForm7/Init.php:51
+msgid "Send"
+msgstr ""
+
+#: includes/Setup/Context.php:60
+msgid "Share on Facebook"
+msgstr ""
+
+#: includes/Setup/Context.php:72
+msgid "YouTube"
+msgstr ""
+
+#: includes/Setup/Context.php:86
+msgid "LinkedIn"
+msgstr ""
+
+#: includes/Setup/Context.php:88
+msgid "Share on LinkedIn"
+msgstr ""
+
+#: includes/Vite.php:82
+msgid "No Vite Manifest exists. Should hot server be running?"
+msgstr ""
+
+#: includes/Vite.php:123
+#, php-format
+msgid "Unknown Vite build asset: %s"
+msgstr ""
+
+#: views/index.html.twig:54
+msgid "Contact & Informations"
+msgstr ""
+
+#: views/index.html.twig:119
+msgid "Mail:"
+msgstr ""
+
+#: views/index.html.twig:124
+msgid "Tel:"
+msgstr ""
+
+#: views/index.html.twig:130 views/index.html.twig:134
+#, php-format
+msgid "%s:"
+msgstr ""
+
+#: views/index.html.twig:143
+msgid "Follow Us"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Courbes"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://github.com/19h47/courbes/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "WordPress Theme for Courbes"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Jérémy Levron"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://19h47.fr/"
+msgstr ""

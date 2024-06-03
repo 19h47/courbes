@@ -1,0 +1,49 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+@import "utilities/scrollbar.css";
+@import "utilities/typography.css";
+
+/* Maison Neue */
+@font-face {
+	font-family: "Maison Neue";
+	src: url("../fonts/maison-neue-book.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: block;
+}
+
+@font-face {
+	font-family: "Maison Neue";
+	src: url("../fonts/maison-neue-bold.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+	font-display: block;
+}
+
+@font-face {
+	font-family: "League Spartan";
+	src: url("../fonts/league-spartan-bold.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+	font-display: block;
+}
+
+@keyframes page-fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+body {
+	opacity: 0;
+	animation: page-fade-in theme('transitionTimingFunction.in-out') 1;
+	animation-fill-mode: forwards;
+	animation-duration: theme('transitionDuration.700');
+}
+

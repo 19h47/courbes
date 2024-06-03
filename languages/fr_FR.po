@@ -1,0 +1,279 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Courbes\n"
+"POT-Creation-Date: 2024-06-03 22:57+0200\n"
+"PO-Revision-Date: 2024-06-03 22:57+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
+"X-Poedit-SearchPathExcluded-2: vendor\n"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oups ! Cette page est introuvable."
+
+#: 404.php:18
+msgid "It looks like nothing was found at this location."
+msgstr "On dirait que rien n'a été trouvé à cet endroit."
+
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:40
+msgid "Blocks Fields"
+msgstr "Champs de blocs"
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:46
+msgid "Hero"
+msgstr "Hero"
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:58
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:62
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:96
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:99
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:111
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:114
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:151
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:155
+#: includes/Plugins/ACF/IncludeFields/HeaderFields.php:53
+#: includes/Plugins/ACF/IncludeFields/HeaderFields.php:56
+msgid "Title"
+msgstr "Titre"
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:66
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:159
+msgid "Background Image"
+msgstr "Image de fond"
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:75
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:210
+#: includes/Plugins/ACF/IncludeFields/HeaderFields.php:60
+#: includes/Plugins/ACF/IncludeFields/InstagramFields.php:71
+msgid "Link"
+msgstr "Lien"
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:84
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:89
+#: views/index.html.twig:52
+msgid "Cares"
+msgstr "Les soins"
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:103
+msgid "Items"
+msgstr "Items"
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:107
+msgid "Add Item"
+msgstr "Ajouter un item"
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:119
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:123
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:175
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:182
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:186
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:193
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:197
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:204
+msgid "Text"
+msgstr "Texte"
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:130
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:133
+msgid "Label"
+msgstr "Label"
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:139
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:144
+#: views/index.html.twig:53
+msgid "Offers"
+msgstr "Les offres"
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:168
+msgid "Texts"
+msgstr "Textes"
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:219
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:224
+msgid "Informations"
+msgstr "Informations"
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:231
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:235
+#: views/index.html.twig:109
+msgid "Opening Hours"
+msgstr "Horaires"
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:239
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:242
+msgid "Address"
+msgstr "Adresse"
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:246
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:249
+msgid "Mail"
+msgstr "Email"
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:253
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:256
+msgid "Phone Number"
+msgstr "Numéro de téléphone"
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:260
+#: includes/Setup/Context.php:58 views/index.html.twig:130
+msgid "Facebook"
+msgstr "Facebook"
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:267
+#: includes/Plugins/ACF/IncludeFields/InstagramFields.php:46
+#: includes/Setup/Context.php:66 views/index.html.twig:134
+msgid "Instagram"
+msgstr "Instagram"
+
+#: includes/Plugins/ACF/IncludeFields/FrontPageFields.php:279
+msgid "Front Page Fields"
+msgstr "Champs de la page d’accueil"
+
+#: includes/Plugins/ACF/IncludeFields/HeaderFields.php:46
+msgid "Header"
+msgstr "En-tête"
+
+#: includes/Plugins/ACF/IncludeFields/HeaderFields.php:72
+msgid "Header Fields"
+msgstr "Champs de l’en-tête"
+
+#: includes/Plugins/ACF/IncludeFields/InstagramFields.php:53
+msgid "Images"
+msgstr "Images"
+
+#: includes/Plugins/ACF/IncludeFields/InstagramFields.php:57
+msgid "Add Image"
+msgstr "Ajouter une image"
+
+#: includes/Plugins/ACF/IncludeFields/InstagramFields.php:61
+msgid "Image"
+msgstr "Images"
+
+#: includes/Plugins/ACF/IncludeFields/InstagramFields.php:85
+msgid "Instagram Fields"
+msgstr "Champs Instagram"
+
+#: includes/Plugins/ACF/Init.php:30 includes/Plugins/ACF/Init.php:32
+msgid "Theme Settings"
+msgstr "Paramètres du thème"
+
+#: includes/Plugins/ContactForm7/Init.php:51
+msgid "Send"
+msgstr "Envoyez"
+
+#: includes/Setup/Context.php:60
+msgid "Share on Facebook"
+msgstr "Partager sur Facebook"
+
+#: includes/Setup/Context.php:72
+msgid "YouTube"
+msgstr "YouTube"
+
+#: includes/Setup/Context.php:86
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: includes/Setup/Context.php:88
+msgid "Share on LinkedIn"
+msgstr "Partagez sur LinkedIn"
+
+#: includes/Vite.php:82
+msgid "No Vite Manifest exists. Should hot server be running?"
+msgstr ""
+"Le manifeste de Vite n’existe pas. Est-ce que le serveur est en court "
+"d’exécution ?"
+
+#: includes/Vite.php:123
+#, php-format
+msgid "Unknown Vite build asset: %s"
+msgstr "Ressource Vite inconnue : %s"
+
+#: views/index.html.twig:54
+msgid "Contact & Informations"
+msgstr "Informations & contact"
+
+#: views/index.html.twig:119
+msgid "Mail:"
+msgstr "Mail :"
+
+#: views/index.html.twig:124
+msgid "Tel:"
+msgstr "Tél :"
+
+#: views/index.html.twig:130 views/index.html.twig:134
+#, php-format
+msgid "%s:"
+msgstr "%s :"
+
+#: views/index.html.twig:143
+msgid "Follow Us"
+msgstr "Follow Us"
+
+#. Theme Name of the plugin/theme
+msgid "Courbes"
+msgstr "Courbes"
+
+#. Theme URI of the plugin/theme
+msgid "https://github.com/19h47/courbes/"
+msgstr "https://github.com/19h47/courbes/"
+
+#. Description of the plugin/theme
+msgid "WordPress Theme for Courbes"
+msgstr "Thème WordPress pour Courbes"
+
+#. Author of the plugin/theme
+msgid "Jérémy Levron"
+msgstr "Jérémy Levron"
+
+#. Author URI of the plugin/theme
+msgid "https://19h47.fr/"
+msgstr "https://19h47.fr/"
+
+#~ msgid "Public Email Address"
+#~ msgstr "Adresse email publique"
+
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#~ msgid "This email address is used for public purposes."
+#~ msgstr "Cette adresse e-mail est utilisée à des fins publiques."
+
+#~ msgid "Enter the LinkedIn URL here."
+#~ msgstr "Indiquer l’URL du compte LinkedIn."
+
+#~ msgid "Enter the Facebook URL here."
+#~ msgstr "Indiquer l’URL du compte Facebook."
+
+#~ msgid "Enter the Instagram URL here."
+#~ msgstr "Indiquer l’URL du compte Instagram."
+
+#~ msgctxt "messages"
+#~ msgid "Please fill out this field."
+#~ msgstr "Veuillez remplir ce champ."
+
+#~ msgctxt "messages"
+#~ msgid "Please enter an email address."
+#~ msgstr "Veuillez entrer une adresse email."
+
+#~ msgctxt "messages"
+#~ msgid "Please enter a URL."
+#~ msgstr "Veuillez entrer une URL."
+
+#~ msgctxt "messages"
+#~ msgid "Please match the expected format."
+#~ msgstr "Veuillez correspondre au format attendu."
