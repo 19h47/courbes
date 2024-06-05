@@ -164,6 +164,48 @@ class FrontPageFields {
 						'preview_size'  => 'medium',
 					),
 					array(
+						'key'        => 'field_' . $key . '_offers_offers',
+						'label'      => __( 'Offers', 'courbes' ),
+						'name'       => 'offers',
+						'type'       => 'group',
+						'layout'     => 'block',
+						'sub_fields' => array(
+							array(
+								'key'         => 'field_' . $key . '_offers_offers_0',
+								'label'       => __( 'Offer', 'courbes' ),
+								'name'        => 0,
+								'type'        => 'textarea',
+								'wrapper'     => array(
+									'width' => 4 / 12 * 100,
+								),
+								'rows'        => 3,
+								'placeholder' => __( 'Offer', 'courbes' ),
+							),
+							array(
+								'key'         => 'field_' . $key . '_offers_offers_1',
+								'label'       => __( 'Offer', 'courbes' ),
+								'name'        => 1,
+								'type'        => 'textarea',
+								'wrapper'     => array(
+									'width' => 4 / 12 * 100,
+								),
+								'rows'        => 3,
+								'placeholder' => __( 'Offer', 'courbes' ),
+							),
+							array(
+								'key'         => 'field_' . $key . '_offers_offers_2',
+								'label'       => __( 'Offer', 'courbes' ),
+								'name'        => 2,
+								'type'        => 'textarea',
+								'wrapper'     => array(
+									'width' => 4 / 12 * 100,
+								),
+								'rows'        => 3,
+								'placeholder' => __( 'Offer', 'courbes' ),
+							),
+						),
+					),
+					array(
 						'key'        => 'field_' . $key . '_offers_texts',
 						'label'      => __( 'Texts', 'courbes' ),
 						'name'       => 'texts',

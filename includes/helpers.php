@@ -59,5 +59,7 @@ function html_class( $class = '' ): string {
  * @access public
  */
 function get_webfonts(): array {
-	return array();
+	return array(
+		'playfair-display' => '//fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap',
+	);
 }

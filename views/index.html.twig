@@ -46,50 +46,65 @@
 							</div>
 							<div class="col-span-2 lg:col-span-1 lg:text-right">
 								<p class="font-bold text-2xl text-[#FAF4B6]">
-									<span class="text-3xl text-white">
+									<span class="text-4xl text-white">
 										{{- post.meta( 'hero' ).title | nl2br -}}
-									</span><br>
-									<a href="#cares" class="hover:underline">{{- __( 'Cares', 'courbes' ) -}}</a><br>
-									<a href="#offers" class="hover:underline">{{- __( 'Offers', 'courbes' ) -}}</a><br>
-									<a href="#contact-informations" class="hover:underline">{{- __( 'Contact & Informations' ) -}}</a>
+									</span><br><br>
+									<a href="#cares" class="uppercase hover:underline">{{- __( 'Cares', 'courbes' ) -}}</a><br>
+									<a href="#offers" class="uppercase hover:underline">{{- __( 'Offers', 'courbes' ) -}}</a><br>
+									<a href="#contact-informations" class="uppercase hover:underline">{{- __( 'Contact & Informations' ) -}}</a>
 								</p>
 
-								<a href="{{ post.meta( 'hero' ).link.url }}" class="bg-white rounded-full font-bold text-xl inline-block align-middle mt-10 lg:mt-20 py-2 px-4" {{ post.meta( 'hero' ).link.target ? 'target="_blank" rel="noopener noreferer"' }}>{{- post.meta( 'hero' ).link.title -}}</a>
+								<a
+									href="{{ post.meta( 'hero' ).link.url }}"
+									class="bg-white rounded-full font-bold text-lg inline-block align-middle mt-10 lg:mt-20 py-2 px-8"
+									{{ post.meta( 'hero' ).link.target ? 'target="_blank" rel="noopener noreferer"' }}
+								>
+									{{- post.meta( 'hero' ).link.title -}}
+								</a>
 
 							</div>
 						</div>
 						{{- include( 'components/image.html.twig', { image: post.meta( 'hero' ).background_image, classes: [ 'absolute inset-0 object-center object-cover size-full z-1 opacity-[0.62]' ]  } ) -}}
 					</div>
 
-					<div class="py-52 lg:py-48" id="cares">
-						<div class="container"><div class="prose lg:prose-lg xl:prose-xl max-w-none">
-							<h2>{{- post.meta( 'cares' ).title -}}</h2>
+					<div class="py-52 lg:py-28" id="cares">
+						<div class="container">
+							<div class="prose lg:prose-lg xl:prose-xl max-w-none">
+								<h2>{{- post.meta( 'cares' ).title -}}</h2>
 
-							<div class="grid grid-cols-3 lg:grid-cols-9 gap-5 justify-center">
+								<div class="grid grid-cols-3 lg:grid-cols-9 gap-5 justify-center">
 
-								{%- for item in post.meta( 'cares' ).items -%}
-									<div class="col-span-3">
-										<p><strong>{{- item.title -}}</strong><br>
-										{{- item.text | nl2br -}}</p>
-									</div>
-								{%- endfor -%}
-							</div>
-							<br>
-							<br>
-							<p style="text-align: center;">{{- post.meta( 'cares' ).label -}}</p>
+									{%- for item in post.meta( 'cares' ).items -%}
+										<div class="col-span-3">
+											<p><strong>{{- item.title -}}</strong><br>
+											{{- item.text | nl2br -}}</p>
+										</div>
+									{%- endfor -%}
+								</div>
+								<br>
+								<br>
+								<p style="text-align: center;">{{- post.meta( 'cares' ).label -}}</p>
 							</div>
 						</div>
 					</div>
 
-					<div class="relative py-52 lg:py-48" id="offers">
+					<div class="relative py-52 lg:py-28" id="offers">
 						<div class="container relative z-2">
-							<h2 class="text-3xl text-white font-bold mb-6">{{- post.meta( 'offers' ).title | nl2br -}}</h2>
+							<h2 class="text-4xl text-white font-bold mb-6">{{- post.meta( 'offers' ).title | nl2br -}}</h2>
+
+							<div class="flex flex-col lg:flex-row justify-end gap-2.5 lg:gap-5">
+								{%- for item in post.meta( 'offers' ).offers -%}
+									<div class="lg:w-4/12 text-2xl">
+										<p>{{ item | raw | nl2br }}</p>
+									</div>
+								{%- endfor -%}
+							</div>
 
 							<div class="flex flex-col lg:flex-row justify-end gap-2.5 lg:gap-5">
 								{%- for item in post.meta( 'offers' ).texts -%}
 									<div class="lg:w-1/6 text-2xl">
-										<p class="text-8xl text-[#FAF4B6] font-bold font-serif">{{ loop.index }}</p>
-										<p>{{ item | raw | nl2br }}</p>
+										<p class="text-9xl text-[#FAF4B6] font-bold font-serif">{{- loop.index -}}</p>
+										<p class="mt-2">{{ item | raw | nl2br }}</p>
 									</div>
 								{%- endfor -%}
 							</div>
@@ -103,7 +118,7 @@
 						{{- include( 'components/image.html.twig', { image: post.meta( 'offers' ).background_image, classes: [ 'absolute inset-0 object-center object-cover size-full z-1' ]  } ) -}}
 					</div>
 
-					<div class="py-52 lg:py-48" id="contact-informations">
+					<div class="py-52 lg:py-28" id="contact-informations">
 						<div class="container">
 							<div class="text-xl font-bold">
 								<h2 class="text-3xl font-bold mb-6">{{- __( 'Opening Hours', 'courbes' ) -}}</h2>

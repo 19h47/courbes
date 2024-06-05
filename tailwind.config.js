@@ -36,7 +36,7 @@ module.exports = {
 		},
 		fontFamily: {
 			sans: ['"Maison Neue"', ...fontFamily.sans],
-			serif: ['"League Spartan"', ...fontFamily.serif],
+			serif: ['"Playfair Display"', ...fontFamily.serif],
 		},
 	},
 	plugins: [

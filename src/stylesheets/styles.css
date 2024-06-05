@@ -23,14 +23,6 @@
 	font-display: block;
 }
 
-@font-face {
-	font-family: "League Spartan";
-	src: url("../fonts/league-spartan-bold.woff2") format("woff2");
-	font-weight: 700;
-	font-style: normal;
-	font-display: block;
-}
-
 @keyframes page-fade-in {
 	from {
 		opacity: 0;
