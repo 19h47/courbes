@@ -42,6 +42,7 @@ class Init {
 			WPImageEditor::class,
 			TemplateLoader::class,
 			GeneralTemplate::class,
+			WPSettings::class,
 		);
 	}
 

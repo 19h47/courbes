@@ -1,0 +1,174 @@
+{#
+ # Front Page
+ #
+ # @package WordPress
+ # @subpackage Courbes
+ #}
+
+{% extends 'index.html.twig' %}
+
+{% block content %}
+	<a href="#top" class="fixed right-0 bottom-0 m-10 lg:m-20 z-10 [.is-on-top_&]:opacity-0 opacity-100 duration-700 ease-in-out transition-opacity">
+		<img class="" src="{{ asset( 'src/img/svg/c.svg' ) }}" alt="">
+	</a>
+
+	<main>
+		<div class="h-screen relative py-10 lg:py-20 flex items-end">
+			<div class="container lg:items-end grid grid-cols-2 gap-10 lg:gap-5 relative z-2">
+				<div class="col-span-2 lg:col-span-1">
+					<h1><img class="max-w-full h-auto w-96" src="{{ asset( 'src/img/svg/logo-baseline.svg' ) }}" alt="" width="215" height="63"></h1>
+				</div>
+				<div class="col-span-2 lg:col-span-1 lg:text-right">
+					<p class="font-bold text-2xl text-[#FAF4B6]">
+						<span class="text-4xl text-white">
+							{{- post.meta( 'hero' ).title | nl2br -}}
+						</span><br><br>
+						<a href="#cares" class="uppercase hover:underline">{{- __( 'Cares', 'courbes' ) -}}</a><br>
+						<a href="#offers" class="uppercase hover:underline">{{- __( 'Offers', 'courbes' ) -}}</a><br>
+						<a href="#contact-informations" class="uppercase hover:underline">{{- __( 'Contact & Informations' ) -}}</a>
+					</p>
+
+					<a
+						href="{{ post.meta( 'hero' ).link.url }}"
+						class="bg-white rounded-full font-bold text-lg inline-block align-middle mt-10 lg:mt-20 py-2 px-8"
+						{{ post.meta( 'hero' ).link.target ? 'target="_blank" rel="noopener noreferer"' }}
+					>
+						{{- post.meta( 'hero' ).link.title -}}
+					</a>
+
+				</div>
+			</div>
+			{{- include( 'components/image.html.twig', { image: post.meta( 'hero' ).background_image, classes: [ 'absolute inset-0 object-center object-cover size-full z-1 opacity-[0.62]' ]  } ) -}}
+		</div>
+
+		<div class="py-52 lg:py-28" id="cares">
+			<div class="container">
+				<div class="prose lg:prose-lg xl:prose-xl max-w-none">
+					<h2>{{- post.meta( 'cares' ).title -}}</h2>
+
+					<div class="grid grid-cols-3 lg:grid-cols-9 gap-5 justify-center">
+
+						{%- for item in post.meta( 'cares' ).items -%}
+							<div class="col-span-3">
+								<p><strong>{{- item.title -}}</strong><br>
+								{{- item.text | nl2br -}}</p>
+							</div>
+						{%- endfor -%}
+					</div>
+					<br>
+					<br>
+					<p style="text-align: center;">{{- post.meta( 'cares' ).label -}}</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="relative py-52 lg:py-28" id="offers">
+			<div class="container relative z-2">
+				<h2 class="text-4xl text-white font-bold mb-6">{{- post.meta( 'offers' ).title | nl2br -}}</h2>
+
+				<div class="flex flex-col lg:flex-row justify-end gap-2.5 lg:gap-5">
+					{%- for item in post.meta( 'offers' ).offers -%}
+						<div class="lg:w-4/12 text-2xl">
+							<p>{{ item | raw | nl2br }}</p>
+						</div>
+					{%- endfor -%}
+				</div>
+
+				<div class="flex flex-col lg:flex-row justify-end gap-2.5 lg:gap-5">
+					{%- for item in post.meta( 'offers' ).texts -%}
+						<div class="lg:w-1/6 text-2xl">
+							<p class="text-9xl text-[#FAF4B6] font-bold font-serif">{{- loop.index -}}</p>
+							<p class="mt-2">{{ item | raw | nl2br }}</p>
+						</div>
+					{%- endfor -%}
+				</div>
+
+				<div class="lg:flex lg:justify-end">
+					<a href="{{ post.meta( 'offers' ).link.url }}" class="bg-white rounded-full font-bold text-xl inline-block align-middle mt-10 lg:mt-20 py-2 px-4" {{ post.meta( 'offers' ).link.target ? 'target="_blank" rel="noopener noreferer"' }}>{{- post.meta( 'offers' ).link.title -}}</a>
+				</div>
+
+			</div>
+
+			{{- include( 'components/image.html.twig', { image: post.meta( 'offers' ).background_image, classes: [ 'absolute inset-0 object-center object-cover size-full z-1' ]  } ) -}}
+		</div>
+
+		<div class="py-52 lg:py-28" id="contact-informations">
+			<div class="container">
+				<div class="text-xl font-bold">
+					<h2 class="text-3xl font-bold mb-6">{{- __( 'Opening Hours', 'courbes' ) -}}</h2>
+					<p>
+						{{- post.meta( 'informations' ).opening_hours | nl2br -}}
+					</p>
+					<p class="mt-4 lg:mt-0 lg:text-right">
+						<a target="_blank" rel="noopener noreferer" class="hover:underline" href="http://maps.google.com/?q={{ post.meta( 'informations' ).address }}">
+							{{- post.meta( 'informations' ).address -}}
+						</a>
+					</p>
+					<p class="lg:text-right">
+						{{- __( 'Mail:', 'courbes' ) -}}&nbsp;<a href="mail:{{- post.meta( 'informations' ).mail -}}" class="hover:underline">
+							{{- post.meta( 'informations' ).mail -}}
+						</a>
+					</p>
+					<p class="lg:text-right">
+						{{- __( 'Tel:', 'courbes' ) -}}&nbsp;<a href="tel:{{ post.meta( 'informations' ).phone_number | replace( { '.' : '', ' ' : '' } ) }}" class="hover:underline">
+							{{- post.meta( 'informations' ).phone_number -}}
+						</a>
+					</p>
+
+					<p class="lg:text-right" class="mt-6">
+						{{- __( '%s:', 'courbes' ) | format( '<strong>' ~ __( 'Facebook', 'courbes' ) ~ '</strong>' ) -}}&nbsp;<a class="hover:underline" href="{{ post.meta( 'informations' ).facebook.url }}" {{ post.meta( 'informations' ).facebook.target ? 'target="_blank" rel="noopener noreferer"' }}>{{ post.meta( 'informations' ).facebook.title }}</a>
+					</p>
+
+					<p class="lg:text-right">
+						{{- __( '%s:', 'courbes' ) | format( '<strong>' ~ __( 'Instagram', 'courbes' ) ~ '</strong>' ) -}}&nbsp;<a class="hover:underline" href="{{ post.meta( 'informations' ).instagram.url }}" {{ post.meta( 'informations' ).instagram.target ? 'target="_blank" rel="noopener noreferer"' }}>{{ post.meta( 'informations' ).instagram.title }}</a>
+					</p>
+
+					{%- if nav_menus.legals.get_items() -%}
+						{%- for item in nav_menus.legals.get_items() -%}
+							<p class="lg:text-right">
+								<a href="{{ item.link }}" class="hover:underline" {{ item.is_target_blank or item.is_external ? "target=\"#{item.target}\" rel=\"noopener noreferer\"" }}>
+									{{- item.title -}}
+								</a>
+							</p>
+						{%- endfor -%}
+					{%- endif -%}
+				</div>
+			</div>
+		</div>
+
+		<div class="overflow-hidden bg-[#FAF4B6] relative text-white">
+			<div class="absolute inset-0 mt-10 lg:mt-20">
+				<div class="container">
+					<p class="text-4xl lg:text-9xl font-bold uppercase">{{- __( 'Follow Us', 'courbes' ) -}}</p>
+				</div>
+			</div>
+			<style>
+				.marquee {
+					animation: marquee 20s linear infinite;
+				}
+
+				@keyframes marquee {
+					0% { transform: translateX(0); }
+					100% { transform: translateX(-50%); }
+				}
+			</style>
+			<div class="overflow-auto scrollbar-hide translate-y-1/4 lg:translate-y-1/2 hover:translate-y-0 transition-transform ease-in-out duration-700 will-change-transform">
+				<ul class="flex gap-10 items-center justify-center marquee will-change-transform">
+					{%- for item in instagram.images -%}
+						<li class="w-1/6 shrink-0">
+							{{- item.link ? "<a href=\"#{ item.link }\" target=\"_blank\" rel=\"noopener noreferer\">" -}}
+							{{- include( 'components/image.html.twig', { image: item.image } ) -}}
+							{{- item.link ? "</a>" -}}
+						</li>
+					{%- endfor -%}
+					{%- for item in instagram.images -%}
+						<li class="w-1/6 shrink-0">
+							{{- item.link ? "<a href=\"#{ item.link }\" target=\"_blank\" rel=\"noopener noreferer\">" -}}
+							{{- include( 'components/image.html.twig', { image: item.image } ) -}}
+							{{- item.link ? "</a>" -}}
+						</li>
+					{%- endfor -%}
+				</ul>
+			</div>
+		</div>
+{% endblock %}
