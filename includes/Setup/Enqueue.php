@@ -189,7 +189,7 @@ class Enqueue {
 
 		wp_add_inline_script(
 			get_theme_text_domain() . '-tarteaucitron',
-			"tarteaucitron.user.googletagmanagerId = 'GTM-P4BLC2G'; (tarteaucitron.job = tarteaucitron.job || []).push('googletagmanager');",
+			"tarteaucitron.user.googletagmanagerId = ''; (tarteaucitron.job = tarteaucitron.job || []).push('googletagmanager');",
 			"after"
 		);
 
